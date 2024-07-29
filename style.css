@@ -1,0 +1,105 @@
+/******************** header **************************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    background-color:  rgb(238,238,238);
+}
+
+header{
+    /* background-color: burlywood; */
+    height: 5rem;
+}
+.titlebar{
+    height: 50%;
+    /* outline: 5px solid red; */
+    display: flex;
+    align-items: center;
+   
+}
+.title-img{
+    height:60%;
+    
+}
+.title{
+    font-size: 1rem;
+    margin-left:-0.5rem;
+}
+.menubar{
+    display:flex;
+    gap:0.5rem;
+    align-items: center;
+    margin-left: 0.5rem;
+    /* outline:2px solid green; */
+    height:50%;
+}
+.menu-btn:hover{
+     background-color: lightblue;
+}
+.menu-items{
+    background-color:rgb(238,238,238);
+    position:absolute;
+    top:5px;
+    width:8rem;
+    display: none;
+    z-index: 10;
+    
+}
+
+.menu{
+    position:relative;
+}
+.menu:hover .menu-items{
+    display:block;
+    cursor:pointer;
+  
+}
+li{
+    padding:0.045rem;
+}
+
+
+.menu-items .feature:hover{
+    background-color: lightblue;
+    display: block;
+}
+.menu-btn{
+    cursor: pointer;
+}
+
+
+
+.video-input{
+    display: none;
+}
+
+
+/**************** main **************************/
+main{
+    height: calc(100vh - 8rem);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    height:100%;
+}
+/*************** footer ******************/
+footer{
+    height: 3rem;
+    /* background-color: aqua; */
+}
+
+
+.toast{
+    color:white;
+    position: fixed;
+    top: 100px;
+    right: 36px;
+    font-size: 30px;
+    display:none;
+}
